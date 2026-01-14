@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* Reset & basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #141414;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(20,20,20,0.95);
+        }
+
+        .left-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #E50914;
+        }
+
+        .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .right-header label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .right-header input[type="radio"] {
+            accent-color: #E50914;
+        }
+
+        .right-header button {
+            background-color: #E50914;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .right-header button:hover {
+            background-color: #f6121d;
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        main h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        main h3, main h4 {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        main input[type="email"] {
+            padding: 12px 15px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 2px;
+            border: none;
+            margin: 10px 0;
+        }
+
+        main button {
+            padding: 12px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            background-color: #E50914;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        main button:hover {
+            background-color: #f6121d;
+        }
+
+        main img {
+            width: 250px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        /* More Reasons Box */
+        .more-reasons {
+            border: 2px solid #E50914;
+            padding: 20px;
+            margin: 30px 0;
+            background-color: #1a1a1a;
+            text-align: left;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 6px;
+        }
+
+        .more-reasons h3 {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .more-reasons h4 {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #141414;
+            color: #757575;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            main input[type="email"] {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+            .right-header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .more-reasons {
+                width: 100%;
+                padding: 15px;
+            }
+
+            main h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-header">NETFLIX</div>
+        <div class="right-header">
+            <label><input type="radio" name="lang" value="English"> English</label>
+            <label><input type="radio" name="lang" value="Hindi"> Hindi</label>
+            <button type="submit">Sign In</button>    
+        </div>
+    </header>
+
+    <main>
+        <h1>Unlimited movies, shows, and more</h1>
+        <h3>Starts at ₹149. Cancel at any time.</h3>
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div>
+            <input type="email" placeholder="Email Address">
+            <button type="submit">Get Started ></button>
+        </div>
+
+        <h3>Trending now</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ARNAUoaEykGHfwi5WP279tCeWer-9ZKSvQ&s" alt="Stranger Things">
+
+        <!-- More Reasons Section -->
+        <div class="more-reasons">
+            <h3>More Reasons to join</h3>
+
+            <h3>Enjoy on your TV</h3>
+            <h4>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h4>
+
+            <h3>Download your shows to watch offline</h3>
+            <h4>Save your favourites easily and always have something to watch.</h4>
+
+            <h3>Watch everywhere</h3>
+            <h4>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
+
+            <h3>Create profiles for kids</h3>
+            <h4>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</h4>
+        </div>
+
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div>
+            <input type="email" placeholder="Email Address">
+            <button type="submit">Get Started ></button>
+        </div>
+
+        <h4>Questions? Call 000-800-919-1743</h4>
+        <div>
+            <a href="https://help.netflix.com/en/node/412">FAQ</a>
+            <a href="https://help.netflix.com/en">Help Centre</a>
+            <a href="https://www.netflix.com/in/login">Account</a>
+            <a href="https://jobs.netflix.com/">Media Centre</a>
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a>
+            <a href="https://help.netflix.com/en/node/412">Jobs</a>
+            <a href="https://help.netflix.com/en/node/14361">Ways to Watch</a>
+            <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+            <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+            <a href="https://www.netflix.com/in/#">Cookie Preferences</a>
+            <a href="https://help.netflix.com/en/node/134094">Corporate Information</a>
+            <a href="https://help.netflix.com/en/contactus">Contact Us</a>
+            <a href="https://fast.com/">Speed Test</a>
+            <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+            <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+        </div>
+    </main>
+
+    <footer>
+        Netflix India
+    </footer>
+</body>
+</html>
