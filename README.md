@@ -8,8 +8,7 @@ This repository is a small front-end experiment where I recreated their **look a
 ## 🗂️ What’s Inside
 
 - **🔍 Google Clone** – A clean search homepage with header, search bar, buttons, and footer. Open the file `google.html` to view it.  
-- **🎬 Netflix Clone** – Hero section, movie cards, and navigation bar, just like the original. Open the file `netflix.html` to view it.  
-- **🎵 Spotify Clone** – Landing page with featured sections and responsive layout. Open the file `spotify.html` to view it.
+- **🎬 Netflix Clone** – Hero section, movie cards, and navigation bar, just like the original. Open the file `netflix.html` to view it.
 
 ---
 
